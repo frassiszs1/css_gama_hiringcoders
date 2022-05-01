@@ -11,7 +11,7 @@
 <body>
     <header>
         <div>
-            <img src="" alt="" srcset="">
+            <img src="./pexels-markus-spiske-1089438.jpg" alt="" srcset="">
         </div>
         <ul>
             <li>
@@ -21,7 +21,7 @@
                 <a target="_blank" href="https://linkedin.com/frassiszs1">Linkedin</a>
             </li>
             <li>
-                <a target="_blank" href="mailto:teste@teste.com">e-mail</a>
+                <a target="_blank" href="mailto:teste@teste.com">E-mail</a>
             </li>
             <li>
                 <a target="_blank" href="https://wa.me/11999999999">Whatsapp</a>
@@ -35,10 +35,10 @@
                 <h5>Software Engineer</h5>
             </div>
 
-            <div id="arrow">
-                <i class="fa-solid fa-circle-arrow-down"></i>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-circle-arrow-down"></i>
             </div>
-            <div id="about">
+            <div style="display: none;" id="about">
                 <p>
                     Cadete na @42sp, estudante de engenharia de software, experiência com suporte TI, atendimento remoto aos clientes.
                 </p>
@@ -56,5 +56,14 @@
             </div>
         </section>
     </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
