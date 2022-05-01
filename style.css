@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(./pexels-markus-spiske-1089438.jpg);
+    background-position: center center fixed;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .nome h1 {
+    font-size: 45px;
+}
+
+.container .nome h5 {
+    font-size: 22px;
+}
+
+.container .about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form input {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form button {
+    width: 50%;
+    margin: 0 auto;
+}
