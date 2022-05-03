@@ -1,69 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/cf811ab5a8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Francisco de Assis</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/cf811ab5a8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Francisco de Assis</title>
 </head>
+
 <body>
-    <header>
+  <header>
+    <div>
+      <img src="./background.jpg" alt="" srcset="">
+    </div>
+    <ul>
+      <li>
+        <a target="_blank" href="https://github.com/frassiszs1">Github</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://linkedin.com/frassiszs1">Linkedin</a>
+      </li>
+      <li>
+        <a target="_blank" href="mailto:teste@teste.com">E-mail</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://wa.me/11999999999">Whatsapp</a>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <section class="container">
+      <div class="nome">
+        <h1>Francisco de Assis</h1>
+        <h5>Software Engineer</h5>
+      </div>
+
+      <div onclick="displayAbout()" id="arrow">
+        <i id="animation" class="fa-solid fa-circle-arrow-down"></i>
+      </div>
+      <div style="display: none;" id="about">
+        <p>
+          Cadete na @42sp, estudante de engenharia de software, experiência com suporte TI, atendimento remoto aos
+          clientes.
+        </p>
+        <p>Experiência anterior na área financeira bancaria, liquidação financeira Banco Bradesco Cartões S.A.</p>
+      </div>
+
+      <div class="form">
         <div>
-            <img src="./pexels-markus-spiske-1089438.jpg" alt="" srcset="">
+          <p>Deixe seu contato!</p>
         </div>
-        <ul>
-            <li>
-                <a target="_blank" href="https://github.com/frassiszs1">Github</a>
-            </li>
-            <li>
-                <a target="_blank" href="https://linkedin.com/frassiszs1">Linkedin</a>
-            </li>
-            <li>
-                <a target="_blank" href="mailto:teste@teste.com">E-mail</a>
-            </li>
-            <li>
-                <a target="_blank" href="https://wa.me/11999999999">Whatsapp</a>
-            </li>
-        </ul>
-    </header>
-    <main>
-        <section class="container">
-            <div class="nome">
-                <h1>Francisco de Assis</h1>
-                <h5>Software Engineer</h5>
-            </div>
+        <form action="">
+          <input type="text" placeholder="seu melhor email :)"></input>
+          <button>Enviar!</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-            <div onclick="displayAbout()" id="arrow">
-                <i id="animation" class="fa-solid fa-circle-arrow-down"></i>
-            </div>
-            <div style="display: none;" id="about">
-                <p>
-                    Cadete na @42sp, estudante de engenharia de software, experiência com suporte TI, atendimento remoto aos clientes.
-                </p>
-                <p>Experiência anterior na área financeira bancaria, liquidação financeira Banco Bradesco Cartões S.A.</p>
-            </div>
-
-            <div class="form">
-                <div>
-                    <p>Deixe seu contato!</p>
-                </div>
-                <form action="">
-                    <input type="text" placeholder="seu melhor email :)"></input>
-                    <button>Enviar!</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <script>
-        function displayAbout() {
-            var arrow = document.getElementById('animation');
-            arrow.classList.toggle('rotate');
-            var display = document.getElementById('about');
-            display.classList.toggle('active');
-        }
-    </script>
+  <script>
+    function displayAbout() {
+      var arrow = document.getElementById('animation');
+      arrow.classList.toggle('rotate');
+      var display = document.getElementById('about');
+      display.classList.toggle('active');
+    }
+  </script>
 </body>
+
 </html>
